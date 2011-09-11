@@ -1,0 +1,107 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+}
+
+#left .leaf, #left div {
+  background-color: #f90;
+}
+
+#right .leaf, #right div {
+  background-color: #f60;
+}
+
+.leaf div {
+  border: 1px solid #fb0;
+  border-bottom-color: #F30;
+  border-right: none;
+  background-color: gray;
+}
+
+/* book construction */
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-perspective: -1000px;
+}
+
+.page {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 1%;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+}
+
+.leaf {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+}
+
+#left .leaf {
+  right: 50%;
+}
+
+#right .leaf {
+  left:  50%;
+}
+
+div {
+  position: absolute;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+}
+
+#left .leaf div {
+  right: 0;
+}
+
+/* pop-up parts */
+
+#left .c1 {
+  width: 60px;
+}
+
+#right .c1 {
+  width: 150px;
+}
+
+#left .c2 {
+  width: 300px;
+}
+
+#right .c2 {
+  width: 250px;
+}
+
+.c3 {
+  top: 25%;
+  height: 50%;
+  overflow: hidden;
+}
+
+#left .c3 {
+  width: 600px;
+}
+
+#right .c3 {
+  width: 600px;
+}
+
+#left .c4 {
+  width: 400px;
+}
+
+#right .c4 {
+  width: 500px;
+}
+
+.c4 {
+  top: 10%;
+  height: 90%;
+}
